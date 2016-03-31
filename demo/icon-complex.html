@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Google Maps demo</title>
+        <style>
+            #map-canvas {
+                border:0.125em solid black;
+                height:30em;
+                width:30em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Complex icons</h1>
+        <p>This example implements <a href="https://developers.google.com/maps/documentation/javascript/examples/icon-complex" target="_blank">Complex icons</a>.</p>
+        <p></p>
+        <div id="map-canvas"></div>
+        <script>
+            var MAPDATA = {
+                'map-canvas':{
+                    markers:[
+                        {
+                            title:'Bondi Beach',
+                            position:{
+                                lat:-33.890542,
+                                lng:151.274856
+                            },
+                            zIndex:4
+                        },
+                        {
+                            title:'Coogee Beach',
+                            position:{
+                                lat:-33.923036,
+                                lng:151.259052
+                            },
+                            zIndex:5
+                        },
+                        {
+                            title:'Cronulla Beach',
+                            position:{
+                                lat:-34.028249,
+                                lng:151.157507
+                            },
+                            zIndex:3
+                        },
+                        {
+                            title:'Manly Beach',
+                            position:{
+                                lat:-33.80010128657071,
+                                lng:151.28747820854187
+                            },
+                            zIndex:2
+                        },
+                        {
+                            title:'Maroubra Beach',
+                            position:{
+                                lat:-33.950198,
+                                lng:151.259301
+                            },
+                            zIndex:1
+                        }
+                    ],
+                    options:{
+                        center:{
+                            lat:-33.9,
+                            lng:151.2
+                        },
+                        markericon:{
+                            url:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+                            size:[20,32],
+                            origin:[0,0],
+                            anchor:[0,32],
+                            shape:{
+                                coords:[1,1,1,20,18,20,18,1],
+                                type:'poly'
+                            }
+                        },
+                        zoom:10
+                    }
+                }
+            };
+            
+            var GOOGLEMAPSKEY = 'YOURKEY';
+        </script>
+        <script src="../bower_components/google-maps/lib/Google.min.js"></script>
+        <script src="../dist/simplegooglemaps.min.js"></script>
+    </body>
+</html>

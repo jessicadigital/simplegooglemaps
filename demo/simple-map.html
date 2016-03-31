@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Google Maps demo</title>
+        <style>
+            #map-canvas {
+                border:0.125em solid black;
+                height:30em;
+                width:30em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Simple map</h1>
+        <p>This example implements <a href="https://developers.google.com/maps/documentation/javascript/examples/map-simple" target="_blank">Simple map</a>.</p>
+        <p></p>
+        <div id="map-canvas"></div>
+        <script>
+            var MAPDATA = {
+                'map-canvas':{
+                    options:{
+                        center:{
+                            lat:-34.397,
+                            lng:150.644
+                        },
+                        zoom:8
+                    }
+                }
+            };
+            
+            var GOOGLEMAPSKEY = 'YOURKEY';
+        </script>
+        <script src="../bower_components/google-maps/lib/Google.min.js"></script>
+        <script src="../dist/simplegooglemaps.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "jessicadigital/simplegooglemaps",
+  "homepage": "https://github.com/jessicadigital/simplegooglemaps",
+  "authors": [
+    "Jessica Digital <jessica@jessica.digital>"
+  ],
+  "description": "A simple method of displaying Google Maps on a website.",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "google",
+    "maps"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "google-maps": "^3.2.1"
+  }
+}
