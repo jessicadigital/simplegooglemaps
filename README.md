@@ -12,7 +12,7 @@ To install, add the bower module to your project:
 
 The only setup you need to do is to generate a Google Maps Javascript API key, and declare this as a global variable.
 
-Remember to include both the ```google-maps``` and ```simplegooglemaps``` scripts in your page ''after the data object has been defined''. These can be compiled or referenced directly as in the included examples.
+Remember to include both the ```google-maps``` and ```simplegooglemaps``` scripts in your page **after the data object has been defined**. These can be compiled or referenced directly as in the included examples.
 
 ### Examples
 
